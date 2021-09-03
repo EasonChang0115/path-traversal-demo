@@ -22,10 +22,10 @@ npm run secure-server
 
 ## 問題
 
-當我在網址輸入 http://127.0.0.1:3000/api/posts/..%2fsysteminfo
+當我在網址輸入 `http://127.0.0.1:3000/api/posts/..%2fsysteminfo`
 
-中介伺服器接受到之後會先 encoded 成 http://127.0.0.1:3000/api/posts/../systeminfo
-但是當我要跟內部伺服器要資料時，因為 axois 的 url 傳的是 http://127.0.0.1:3000/api/posts/../systeminfo，並沒有像瀏覽一樣轉成 http://127.0.0.1:3000/api/systeminfo，導致我無法模擬出來。
+中介伺服器接受到之後會先 encoded 成 `http://127.0.0.1:3000/api/posts/../systeminfo`
+但是當我要跟內部伺服器要資料時，因為 axois 的 url 傳的是 `http://127.0.0.1:3000/api/posts/../systeminfo`，並沒有像瀏覽一樣轉成 `http://127.0.0.1:3000/api/systeminfo`，導致我無法模擬出來。
 
 ## 目前猜想
 
