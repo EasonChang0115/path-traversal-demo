@@ -15,7 +15,7 @@ app.get('/api/posts/:postId', (req, res) => {
       return res.send(response.data);
     })
     .catch((e) => {
-      return res.send('不合法存取');
+      return res.send('存取失敗');
     });
 });
 

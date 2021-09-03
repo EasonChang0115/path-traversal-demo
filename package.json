@@ -11,12 +11,14 @@
     "test": "__tests__"
   },
   "scripts": {
-    "dev": "nodemon --exec babel-node ./src/app.js",
+    "server": "nodemon --exec babel-node ./server/src/app.js",
+    "secure-server": "nodemon --exec babel-node ./secure-server/src/app.js",
     "clean": "rm -rf dist",
     "build": "npm run clean && babel ./src --out-dir dist --copy-files",
     "prod": "node ./dist/app.js"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "express": "^4.17.1"
   },
   "devDependencies": {

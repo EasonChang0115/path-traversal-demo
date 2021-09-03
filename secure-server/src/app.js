@@ -18,5 +18,5 @@ app.use((req, res, next) => {
 // 開啟專案
 const port = 3001;
 app.listen(port, () => {
-  console.log('http://127.0.0.1:3001');
+  console.log('http://127.0.0.1:3001/posts');
 });
