@@ -15,7 +15,8 @@ app.use((req, res, next) => {
   res.status(404).send('<h1>Page not found on the server</h1>');
 });
 
-// 開啟轉案
-const port = 80;
-console.log('run on 80');
-app.listen(port);
+// 開啟專案
+const port = 3001;
+app.listen(port, () => {
+  console.log('http://127.0.0.1:3001');
+});

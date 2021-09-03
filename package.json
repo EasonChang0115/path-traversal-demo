@@ -1,25 +1,14 @@
 {
-  "name": "pattern-transform-server",
+  "name": "path-traversal-demo",
   "version": "0.0.15",
-  "description": "pattern transform server",
-  "author": "JasonChang <jason@ai-pattern.com>",
+  "description": "path-traversal-demo",
+  "author": "JasonChang",
   "private": true,
   "homepage": "",
   "license": "ISC",
-  "main": "lib/pattern-transform-server.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
-  },
-  "files": [
-    "lib"
-  ],
-  "publishConfig": {
-    "registry": "http://192.168.1.11:4873/"
-  },
-  "repository": {
-    "type": "git",
-    "url": "http://192.168.1.111/patterngo_front/pattern_front_app.git"
   },
   "scripts": {
     "dev": "nodemon --exec babel-node ./src/app.js",
@@ -28,7 +17,6 @@
     "prod": "node ./dist/app.js"
   },
   "dependencies": {
-    "axios": "^0.21.1",
     "express": "^4.17.1"
   },
   "devDependencies": {
